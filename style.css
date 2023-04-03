@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.header{
+    padding: 20px;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.header .logo a{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.logo .hero-0{
+    align-items: center;
+    padding: 10px;
+    font-size: 55px;
+    color: #21E6C1;
+}
+
+nav{
+    margin-top: 15px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li a { 
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 40px;
+    color: white;
+    font-size: 25px;
+    transition: all 150ms ease-in-out;
+  }
+
+.nav    a:hover{
+    color: #21E6C1;
+    text-decoration: underline;
+    transform: translateY(-5px);
+}
+
+nav .fa-solid{
+    color: aliceblue;
+    display: none;
+}
+
+.main{
+    margin-top: 15px;
+}
+
+
+input.Search-bar{
+    background-image: linear-gradient(to right, white, rgb(255, 255, 255));
+    opacity: 0.6;
+    color: #000000;
+    border: none;
+    width: 20%;
+    padding: 15px;
+    margin: 0.8em;
+    border-radius: 100px;
+    font-size: 16px;
+}
+.search{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 7px 8px;
+}
+button{
+    background-image: linear-gradient(to right, white, rgb(255, 255, 255));
+    opacity: 0.6;
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 3em;
+    width: 3em;
+    outline: none;
+    background: 7c7c7c2b;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background: rgb(165, 165, 218);
+
+}
+
+.weather__units {
+    font-size: 15px;
+    opacity: 1;
+}
+
+.weather__units span {
+    cursor: pointer;
+}
+
+.weather__units span:first-child {
+    margin-right: 0.5rem;
+}
+
+.weather__toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 30px;
+  }
+
+  .weather__toggle-input {
+    display: none;
+  }
+
+  .weather__toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: all 0.3s;
+  }
+
+  .weather__toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  .weather__toggle-input:checked + .weather__toggle-slider {
+    background-color: #2196F3;
+  }
+
+  .weather__toggle-input:checked + .weather__toggle-slider:before {
+    transform: translateX(30px);
+  }
+
+  .weather_unit_celsius {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .weather_unit_farenheit {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+.container {
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0) , rgb(255, 255, 255));
+    opacity: 0.8;
+    color: #fff;
+    padding: 2rem;
+    width: 40%;
+    height: 400px;
+    margin:auto;
+    border-radius: 10px;
+}
+
+.weather__body {
+    text-align: center;
+}
+
+.weather__datetime {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.weather__forecast {
+    background: #1e1e1e;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.weather__icon img {
+    width: 70px;
+}
+
+.weather__temperature {
+    font-size: 16px;
+}
+
+.weather__minmax {
+    display: flex;
+    justify-content: center;
+}
+
+.weather__minmax p {
+    font-size: 14px;
+    margin: 5px;
+}
+
+.weather__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.weather__card {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.weather__card i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.weather__card p {
+    font-size: 14px;
+}
+
+.copyright{
+    margin-top: 50px;
+    align-items: center;
+    color: #fff;
+    font-size: x-large;
+    word-spacing: 3px;
+    text-align: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <a href="index.html" style="text-decoration: none">
+            <span class="hero-0"style="text-decoration: underline;"><u>WEATHER</u></span>App</a>
+        </div>
+  
+        <nav>
+          <div class="nav" id="nav">
+            <ul>
+              <li><a href="index.html">TODAY</a></li>
+              <li><a href="index.html">TOMORROW</a></li>
+              <li><a href="index.html">MONTHLY FORECAST</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="search">
+            <input type="text" class="Search-bar" placeholder="Search for the city...">
+            <Button><i class="fa-solid fa-magnifying-glass"></i></i></Button>
+        </div>
+
+        <div class="container">
+          <div class="weather__units">
+            <label class="weather__toggle-switch">
+              <input type="checkbox" class="weather__toggle-input">
+              <span class="weather__toggle-slider"></span>
+              <span class="weather_unit_celsius">°C</span>
+              <span class="weather_unit_farenheit">°F</span>
+            </label>
+            </div>
+          <div class="weather__body">
+              <h1 class="weather__city">Londan</h1>
+              <div class="weather__datetime">april 3 2003 monday</div>
+              <div class="weather__forecast"></div>
+              <div class="weather__icon"></div>
+              <p class="weather__temperature"></p>
+              <div class="weather__minmax">
+                  <p>Min: 12&#176</p>
+                  <p>Max: 16&#176</p>
+              </div>
+          </div>
+  
+          <div class="weather__info">
+              <div class="weather__card">
+                  <i class="fa-solid fa-temperature-full"></i>
+                  <div>
+                      <p>Real Feel</p>
+                      <p class="weather__realfeel">18&#176</p>
+                  </div>
+              </div>
+              <div class="weather__card">
+                  <i class="fa-solid fa-droplet"></i>
+                  <div>
+                      <p>Humidity</p>
+                      <p class="weather__humidity">18&#176</p>
+                  </div>
+              </div>
+              <div class="weather__card">
+                  <i class="fa-solid fa-wind"></i>
+                  <div>
+                      <p>Wind</p>
+                      <p class="weather__wind">18&#176</p>
+                  </div>
+              </div>
+              <div class="weather__card">
+                  <i class="fa-solid fa-gauge-high"></i>
+                  <div>
+                      <p>Pressure</p>
+                      <p class="weather__pressure">18&#176</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <footer class="copyright">
+            <p>©2023 Rishi Thapa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
