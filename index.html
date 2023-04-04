@@ -18,18 +18,18 @@
           <div class="nav" id="nav">
             <ul>
               <li><a href="index.html">TODAY</a></li>
-              <li><a href="index.html">TOMORROW</a></li>
-              <li><a href="index.html">MONTHLY FORECAST</a></li>
+              <li><a href="tomorrow.html">TOMORROW</a></li>
+              <li><a href="month.html">MONTHLY FORECAST</a></li>
             </ul>
           </div>
         </nav>
     </div>
 
     <div class="main">
-        <div class="search">
-            <input type="text" class="Search-bar" placeholder="Search for the city...">
-            <Button><i class="fa-solid fa-magnifying-glass"></i></i></Button>
-        </div>
+      <form class="weather__search">
+        <input type="text" placeholder="Search for a city..." class="weather__searchform">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form> 
 
         <div class="container">
           <div class="weather__units">
@@ -41,8 +41,8 @@
             </label>
             </div>
           <div class="weather__body">
-              <h1 class="weather__city">Londan</h1>
-              <div class="weather__datetime">april 3 2003 monday</div>
+              <h1 class="weather__city"></h1>
+              <div class="weather__datetime"></div>
               <div class="weather__forecast"></div>
               <div class="weather__icon"></div>
               <p class="weather__temperature"></p>

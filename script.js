@@ -15,8 +15,8 @@ let weather__wind = document.querySelector('.weather__wind');
 let weather__pressure = document.querySelector('.weather__pressure');
 
 // search
-document.querySelector(".search").addEventListener('submit', e => {
-    let search = document.querySelector(".Search-bar");
+document.querySelector(".weather__search").addEventListener('submit', e => {
+    let search = document.querySelector(".weather__searchform");
     // prevent default action
     e.preventDefault();
     // change current city
@@ -25,6 +25,16 @@ document.querySelector(".search").addEventListener('submit', e => {
     getWeather();
     // clear form
     search.value = ""
+})
+
+// units
+document.querySelector(".weather_unit_celsius").addEventListener('click', () => {
+    if(units !== "metric"){
+        // change to metric
+        units = "metric"
+        // get weather forecast 
+        getWeather()
+    }
 })
 
 document.querySelector(".weather_unit_farenheit").addEventListener('click', () => {
@@ -78,7 +88,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currCity}&appid=${API
     weather__humidity.innerHTML = `${data.main.humidity}%`
     weather__wind.innerHTML = `${data.wind.speed} ${units === "imperial" ? "mph": "m/s"}` 
     weather__pressure.innerHTML = `${data.main.pressure} hPa`
-})
+})  
 }
 
 document.body.addEventListener('load', getWeather())
