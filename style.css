@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Itim', cursive;
-    text-decoration: none;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    
 }
 
 html{
@@ -12,7 +12,6 @@ html{
 }
 
 body{
-    background-color: black;
     background-image: url(bg.jpg);
     background-size: cover;
 }
@@ -96,7 +95,7 @@ button{
     width: 3em;
     outline: none;
     background: 7c7c7c2b;
-    color: black;
+    color: #21E6C1;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -153,7 +152,7 @@ button:hover{
   }
 
   .weather__toggle-input:checked + .weather__toggle-slider {
-    background-color: #2196F3;
+    background-color: #21E6C1;
   }
 
   .weather__toggle-input:checked + .weather__toggle-slider:before {
@@ -232,7 +231,7 @@ button:hover{
 .weather__card {
     display: flex;
     align-items: center;
-    background: #1e1e1e;
+    background: #000000;
     padding: 10px;
     border-radius: 10px;
 }
@@ -247,7 +246,7 @@ button:hover{
 }
 
 .copyright{
-    margin-top: 40px;
+    margin-top: 70px;
     color: #fff;
     font-size: x-large;
     word-spacing: 3px;
